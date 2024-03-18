@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/utama.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,300&family=Open+Sans:wght@300;400&family=Quicksand:wght@500;700&family=Silkscreen&display=swap"
+        rel="stylesheet">
+    <title>Ml Store</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="p">
+        <div id="navbar-utama">
+            <div class="logo">
+                <img src="assets/logoMl.png" alt="Logo">
+            </div>
+            <h4>MU_Store</h4>
+            <ul>
+                <li><a href="#events">Event</a></li>
+                <li><a href="#diamond">Diamond</a></li>
+                <li><a href="#wdp">Weekly Diamond Pass</a></li>
+                <li><a href="miniGame.html" target="_blank">Minigame??</a></li>
+            </ul>
+        </div>
+
+        <main id="panel-utama">
+            <div class="content">
+                <div class="content-description">
+                    <h1 class="title">Mobile <span>Legends</span></h1>
+                    <p>Selamat datang di dunia Mobile Legends, tempat di mana petualangan epik dan pertempuran seru
+                        menggenggam hatimu! Dengan grafis yang memukau dan gameplay yang mendebarkan, kami mengundangmu
+                        untuk merasakan kegembiraan menjadi pahlawan di medan perang digital.</p>
+                    <button class="btn-utama">Lebih lanjut</button>
+                </div>
+                <div class="content-image">
+                    <img src="img/ml-logo.png" alt="Mobile Legends">
+                </div>
+            </div>
+        </main>
+        <!-- HEADER END -->
+
+        <!-- CONTENT -->
+
+        <!-- CAROUSEL -->
+
+        <div class="container-carousel">
+            <div class="inner-carousel">
+                <div class="item-carousel"><img src="assets/Carousel1.jpg" alt="Slide 1"></div>
+                <div class="item-carousel"><img src="assets/Carousel2.png" alt="Slide 2"></div>
+                <div class="item-carousel"><img src="assets/Carousel3.jpg" alt="Slide 3"></div>
+            </div>
+            <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+        </div>
+
+
+        <!-- SEARCH  -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Coba ketik Weekly">
+        </div>
+
+        <!-- EVENT -->
+        <div id="content">
+            <h2 class="kategori-produk" id="events">Events</h2>
+            <article id="kungfuPanda" class="event-content">
+                <h2>Kungfu<span class="panda">Panda</span></h2>
+                <img src="assets/kungfupanda.jpg" class="featured-image" style="border-radius: 20px;" />
+                <p>
+                    Event Kung Fu Panda MLBB ini sudah akan resmi dimulai di dalam game pada 20 Agustus 2022. Sama
+                    seperti
+                    event Transformers dan Star Wars sebelumnya, akan ada tab event in-game baru yang ditambahkan di
+                    lobby.
+
+                    Untuk mendapatkan skin eksklusif, pemain harus mengumpulkan Jade Ornament dalam jumlah tertentu
+                    untuk
+                    ditukarkan dengan skin ekslusif yang diinginkan. Pemain hanya bisa mendapatkan item ini melalui draw
+                    dengan menggunakan Diamond.
+
+                    Akan tetapi sama seperti kebanyakan event MLBB lainnya, akan ada pre-register untuk mengikuti event
+                    ini
+                    yang berhadiah satu Jade Token untuk bisa melakukan draw dan mendapatkan Jade Ornament secara
+                    gratis.
+                    Selain itu, akan ada dua fase bonus top-up untuk bisa mendapatkan beberapa Jade Token tambahan.
+                    Melalui
+                    bonus top-up ini, para pemain bisa mendapatkan Jade Token gratis, meski harus melakukan top-up,
+                    untuk
+                    bisa melakukan 10 draw pertama.
+                </p>
+
+            </article>
+
+            <article id="starWars" class="event-content">
+                <div>
+                    <img src="assets/StarWars-30-12-2023.png" alt="" width="300px">
+                </div>
+                <img src="assets/starwars.jpg" class="featured-image" style="border-radius: 20px;" />
+                <p>
+                    Salah satu kolaborasi keren Mobile Legends akan kembali dihadirkan di tahun 2023 ini. Buat sebagian
+                    pemain ada yang cocok dengan event ini karena dari event ini kalian bisa mendapatkan skin Epic
+                    Limited
+                    atau Legend yang diinginkan. Kok bisa?
+
+                    Tentu saja, karena lewat event ini pemain akan mendapatkan coin Star Wars yang nantinya bisa
+                    ditukarkan
+                    dengan skin yang tersedia di shop. Akan ada banyak skin dari mulai Special hingga Epic Limited. SPIN
+                    Esports pernah tukar skin Chang’e Epic Limited lewat event ini dan tentu kalian juga bisa pilih skin
+                    sesuka kalian dari pilihan yang tersedia.
+                </p>
+
+            </article>
+
+            <article id="jjk" class="event-content">
+                <div>
+                    <img src="assets/Jujutsu-Kaisen-30-12-2023.png" alt="" width="300px">
+                </div>
+                <img src="assets/jjk.jpg" class="featured-image" style="border-radius: 20px;">
+                <p>
+
+                    Terjalinnya aliansi epik antara Mobile Legends dan Jujutsu Kaisen menciptakan pengalaman gaming luar
+                    biasa, di mana kekuatan hero-hiro Mobile Legends bersatu dengan kekuatan sihir dan kutukan dari
+                    dunia
+                    Jujutsu Kaisen. Sambutlah kehadiran karakter-karakter Jujutsu Kaisen ke dalam Mobile Legends,
+                    membawa
+                    keberagaman kemampuan dan strategi baru untuk memperkaya pertempuran di Land of Dawn. Dengan
+                    hadirnya
+                    kolaborasi Mobile Legends x Jujutsu Kaisen, para pemain dapat mengeksplorasi elemen-elemen unik dari
+                    anime ini, dari teknik sihir hingga karakter-karakter penuh karisma.
+                    Bergabunglah dalam pertarungan epik
+                </p>
+                <p>
+                    dengan Yuji Itadori, Satoru Gojo, dan karakter-karakter Jujutsu Kaisen lainnya dalam Mobile Legends!
+                    Rasakan kekuatan dan kebijaksanaan mereka di dalam arena pertempuran. Kolaborasi ini tidak hanya
+                    membawa
+                    skin baru yang keren, tetapi juga menghadirkan nuansa cerita yang mendalam dan keterlibatan karakter
+                    yang membuat setiap pertempuran menjadi lebih seru! Mobile Legends dan Jujutsu Kaisen berpadu untuk
+                    memberikan pengalaman bermain yang luar biasa, di mana strategi bertemu sihir dalam setiap langkah
+                    pemain. Saksikan keseruan ketika hero Mobile Legends memasuki dunia Jujutsu Kaisen, membawa
+                    perpaduan
+                    unik antara kecepatan pertempuran dan kekuatan supernatural. Collab ini bukan hanya tentang skin
+                    baru,
+                    tapi juga membawa kisah kolaboratif yang memikat antara dua dunia yang sebelumnya terpisah. Mobile
+                    Legends dan Jujutsu Kaisen, dua kekuatan besar bersatu untuk menciptakan pengalaman bermain yang tak
+                    terlupakan. Bersiaplah untuk petualangan baru!
+                </p>
+            </article>
+        </div>
+        <div class="menu-container">
+            <h3 style="color:white" class="kategori-produk" id="diamond">Diamonds</h3>
+            <!-- CARD -->
+
+            <div class="productList">
+                <a href="pembayaran.html" class="card-link" id="diamond1">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">5 (5+10) Diamonds<br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link" id="diamond2">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">10 (9+1) Diamonds<br><span class="price">Rp 2.850</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">59 (53+6) Diamonds<br><span class="price">Rp 15.250</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">110 (100+10) Diamonds<br><span class="price">Rp28.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">554 (500+54) Diamonds<br><span class="price">Rp 142.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">DIAMOND <br><span class="price">Rp 1.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">DIAMOND <br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">DIAMOND <br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">DIAMOND <br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/diamond-blue.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">DIAMOND <br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Weekly diamond pass -->
+        </div>
+        <div class="menu-container">
+            <h3 class="kategori-produk" id="wdp">Weekly Diamond Pass</h3>
+            <!-- CARD -->
+
+            <div class="productList">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">1x Weekly Diamond Pass<br><span class="price">Rp 27.000</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">2x Weekly Diamond Pass<br><span class="price">Rp 53.500</span></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">3x Weekly Diamond Pass<br><span class="price">Rp 79.000</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">4x Weekly Diamond Pass<br><span class="price">Rp28.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">5x Weekly Diamond Pass<br><span class="price">Rp 142.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">6x Weekly Diamond Pass<br><span class="price">Rp 1.450</span></p>
+
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="assets/wdp.png" alt="Game Image" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">7x Weekly Diamond Pass<br><span class="price">Rp 1.450</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!-- CONTENT END -->
+        <!-- FOOTER -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#diamond">Diamonds</a></li>
+                        <li><a href="#wdp">Weekly Diamond Pass</a></li>
+                        <li><a href="latihanDomSuwitJawa.html" target="_blank">Minigame??</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ml Store. All rights reserved. | Designed by Maulidin Abdi</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="script/utama.js"></script>
+    <script src="bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

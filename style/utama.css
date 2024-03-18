@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+:root{
+  --panda:#EF4040;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  object-fit: cover;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: repeat; 
+  height: 100vh; 
+}
+#navbar-utama {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index:999;
+  transition: background-color 0.9s;
+}
+
+#navbar-utama.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#navbar-utama .logo img {
+  width: 100px;
+  margin-left: 20px;
+}
+#navbar-utama h4 {
+  color: rgb(106, 50, 50);
+  font-family: "Silkscreen", sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#navbar-utama ul {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+#navbar-utama ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  border: 2px solid transparent;
+}
+
+#navbar-utama ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: rgb(206, 186, 186);
+  font-size: 20px;
+}
+
+#navbar-utama ul li:hover {
+  border-color: rgb(206, 186, 186);
+  border-radius: 999px;
+}
+
+/* Navbar END */
+
+/* CAROUSEL */
+
+.container-carousel {
+  width: 80%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 99px;
+}
+
+.inner-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.item-carousel {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.item-carousel img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* SEARCH */
+
+.search-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #161a30;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+  text-align: center;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 99px;
+  height: 50px;
+}
+
+#search-input:focus {
+  background-color: #161a30;
+  color: white;
+}
+
+/* MENU */
+.menu-container {
+  background-color: #161a30;
+  margin-inline: 8px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+.kategori-produk{
+  margin-left: 8px;
+  color: white;
+}
+
+.productList {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  width: 100%;
+  max-width: 275px;
+  border: 1px solid #ddd;
+  margin-inline: 10px;
+  margin-block: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-image: url("../assets/background.jpg");
+  object-fit: contain;
+  background-size: cover;
+}
+
+.card-text {
+  font-weight: bold;
+  color: rgb(226, 226, 226);
+}
+
+.price {
+  color: rgba(255, 255, 255, 0.449);
+}
+
+.card-link {
+  display: flex;
+  width: 240px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+
+/* Event */
+#content{
+  flex: 5;
+  display:flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+  margin: 8px;
+  padding: 10px;
+  background-color: #161a30;
+}
+#content h2{
+  margin-inline-start: 8px;
+}
+.featured-image{
+  width: 50%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+}
+
+.profile-image{
+  width: 200px;
+}
+
+
+.event-content{
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+  background-color: #292c3b;
+  display: flex;
+  flex-direction: column;
+}
+.event-content p, h2{
+  color: white;
+}
+
+.event-content  h2 .panda{
+  color: var(--panda);
+}
+
+#kungfuPanda h2{
+  color:gold ;
+}
+
+
+/* CSS for Footer */
+footer {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 120px;
+}
+
+
+.footer-links,
+.footer-social {
+  flex: 1 1 200px;
+  margin-top: 20px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  color: #fff;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: #ddd;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-social {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}

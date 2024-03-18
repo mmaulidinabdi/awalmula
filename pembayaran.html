@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/pembayaran.css">
+  
+  <link rel="stylesheet" href="bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+  <title>Udin_Store</title>
+</head> 
+
+<body>
+  <div class="container-body">
+
+    <form class="data-akun">
+      <h3>Masukkan Data akun</h3>
+      <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">ID</label>
+        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan ID">
+      </div>
+      <div class="mb-2">
+        <label for="exampleInputPassword1" class="form-label">Server</label>
+        <input class="form-control" id="exampleInputPassword1" placeholder="Masukkan Server">
+      </div>
+      <hr class="hr">
+
+      <div class="accordion">
+        <h3>Pilih Metode Pembayaran</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Qris
+              </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    (DANA,GOPAY,OVO, DLL)
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                E-Wallet
+              </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    DANA
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    SHOOPEPAY
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    OVO
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    LINKAJA
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Virtual Account
+              </button>
+            </h3>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    BRI Virtual Account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    BNI Virtual Account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Mandiri Virtual Account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    BSI Virtual Account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Permata Virtual Account
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Danamon Virtual Account
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr">
+      <div class="promo">
+        <h3>Punya Kode Promo? Masukkan Disini</h3>
+        <div class="input-group mt-4">
+          <input type="text" class="form-control" placeholder="Kode Promo" aria-label="Kode Promo"
+            aria-describedby="button-addon2">
+          <button type="button" class="btn btn-secondary">Gunakan</button>
+        </div>
+      </div>
+      <div class="telpon">
+        <h3>Detail Kontak Anda</h3>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">+62</span>
+          <input type="number" class="form-control" placeholder="Masukkan Nomor Whatsapp Kamu"
+            aria-label="Masukkan Nomer Whatsapp Kamu" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit">Pesan Sekarang</button>
+      </div>
+    </form>
+
+    <aside id="side-content">
+      <p>Beli top up ML diamond Mobile Legends dan Weekly Pass harga paling murah, aman, cepat, dan terpercaya hanya di
+        Udin_Store. Cara topup MLBB via ID termurah cukup dengan memasukkan ID (Server) dan lakukan pembayaran, secara
+        otomatis diamond masuk ke akun Anda.</p>
+        <ol>
+          <li>Waktu Proses 1 Detik Setelah pembayaran diterima</li>
+          <li>Layanan Top Up 24 Jam Non Stop</li>
+          <li>Bantuan Chat WhatsApp open 24 jam</li>
+        </ol>
+        <p>** AKUN ADVANCE SERVER tidak bisa top up disini</p>
+    </aside>
+  </div>
+
+
+
+  <!-- SCIRPT -->
+  <script src="bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
+  <script>
+    let tombol = document.querySelector('.btn.btn-primary');
+
+    tombol.addEventListener('click',function(){
+      alert('TerimaKasih');
+    });
+
+  </script>
+</body>
+
+</html>
